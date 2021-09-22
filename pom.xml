@@ -17,14 +17,17 @@
         <guava.version>30.1.1-jre</guava.version>
     </properties>
 
-<modules>
-    <module>
-        module-a
-    </module>
-    <module>
-        module-b
-    </module>
-</modules>
+    <modules>
+        <module>
+            module-a
+        </module>
+        <module>
+            module-b
+        </module>
+        <module>
+            module-c
+        </module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
@@ -32,6 +35,12 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>5.8.0</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
